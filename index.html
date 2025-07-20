@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IO . F R E E L A N C R</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-8fQ0xh6jX4sKTvY1WjvDFHkKznTk+...==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+  .portfolio-box {
+    width: 100%;
+    max-width: 500px; /* Increased size */
+    height: 600px;     /* Increased size */
+    overflow: hidden;
+    border-radius: 69px;
+    position: relative;
+    background: transparent;
+    padding: 0;
+    margin: auto;
+  }
+
+  .portfolio-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 69px;
+    transition: transform 0.5s ease;
+  }
+
+  .portfolio-box:hover img {
+    transform: scale(1.05);
+  }
+
+  .portfolio-info {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    border-bottom-left-radius: 69px;
+    border-bottom-right-radius: 69px;
+    background: rgba(0, 0, 0, 0.6); /* Optional dark overlay */
+  }
+
+  .portfolio-box:hover .portfolio-info {
+    transform: translateY(0);
+  }
+
+  .portfolio-info h5 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .portfolio-info p {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .btn-dark:hover {
+  background-color: #50029e !important;
+  color: #fff;
+}
+
+</style>
+
+  <!-- Floating Animations -->
+  <style>
+    @keyframes float1 {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @keyframes float2 {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(20px); }
+    }
+
+    @keyframes glowPulse {
+      0%, 100% { box-shadow: 0 0 25px rgba(141,23,238,0.3); }
+      50% { box-shadow: 0 0 35px rgba(141,23,238,0.5); }
+    }
+  </style>
+
+
+<style>
+.floating-shapes {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Common Circle Style */
+.circle-shape {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#dcdcdc 30%, transparent);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: float1 6s ease-in-out infinite;
+  filter: blur(2px);
+}
+
+/* Common Triangle Style */
+.triangle-shape {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 90px solid #d3d3d3;
+  opacity: 0.25;
+  animation: float2 8s ease-in-out infinite;
+  filter: blur(1px);
+}
+
+/* RANDOM POSITIONING */
+.shape1 { top: 10%; left: 5%; }
+.shape2 { bottom: 15%; right: 10%; }
+.shape3 { top: 50%; left: 40%; width: 80px; height: 80px; }
+.shape4 { bottom: 30%; left: 20%; }
+.shape5 { top: 20%; right: 20%; }
+.shape6 { top: 70%; right: 5%; }
+
+/* Animations */
+@keyframes float1 {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes float2 {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
+  100% { transform: translateY(0); }
+}
+
+  
+</style>
+
+
+</head>
+
+<body>
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 1 - THE NAVBAR SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////////-->
+  <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top"
+    style="background: linear-gradient(to right, #c3d4d6f2, rgb(108 35 163));">
+
+    <div class="container">
+      <span style="font-size: 23px;">I O . F R E E L A N C E R / ></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Latest Work</a></li>
+          </li>
+        </ul>
+        <button type="button" class="rounded-pill btn-rounded">
+          +91 7850963027
+          <span>
+            <i class="fas fa-phone-alt"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+                            START SECTION 2 - THE INTRO SECTION  
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+<section id="home" class="intro-section position-relative"
+style="background: linear-gradient(to right, #c3d4d6f2, rgb(108 35 163)); overflow: hidden;
+         padding-top: 140px; padding-bottom: 140px;">
+
+  <div class="circle-shape shape3"></div>
+  <div class="triangle-shape shape4"></div>
+
+  <!-- 🔹 Dot Pattern Background -->
+  <svg style="position:absolute; inset:0; width:100%; height:100%; z-index:0; opacity:0.25;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="dotPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+        <circle cx="1" cy="1" r="1.2" fill="#b3b3b3" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#dotPattern)" />
+  </svg>
+
+  <!-- 🔹 Soft Blurred Blob -->
+  <div style="position: absolute; top: 20%; left: 50%; width: 300px; height: 300px;
+              background: #ffffff; opacity: 0.06; filter: blur(100px);
+              border-radius: 50%; z-index: 0; transform: translateX(-50%);">
+  </div>
+
+  <!-- 🔸 Main Content -->
+  <div class="container position-relative" style="z-index: 1;">
+    <div class="row align-items-center text-white">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-md-6 intros text-start">
+        <h3 class="tag">&lt;span&gt; Hey!, I'm <strong style="color:#116811;">Vasu</strong> &lt;/span&gt;</h3>
+        <h1 style="font-size: 48px;">
+          <span class="highlight-green" style="color: #116811;">{Full Stack}</span><br>
+          Web Developer_
+        </h1>
+        <p style="font-family: 'Courier New', monospace; color: #fff; font-size: 18px;">
+          <span style="color: #d16f6f;">&lt;p&gt;</span>
+          <span style="color: #116811;">
+          
+            I deliver web solutions that are both innovative and robust.
+          </span>
+          <span style="color: #d16f6f;">&lt;/p&gt;</span>
+        </p>
+        <div class="tech-icons">
+          <i class="fab fa-angular" style="color: #dd0031;"></i>
+          <i class="fab fa-node-js" style="color: #68a063;"></i>
+          <i class="fab fa-css3-alt" style="color: #264de4;"></i>
+          <i class="fab fa-react" style="color: #fbff00;"></i>
+          <span class="text-dark-grey">... and more</span>
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-md-6 intros text-end">
+        <div class="video-box">
+          <img src="images/arts/intro-section-illustration.png" alt="video illustration" class="img-fluid">
+          <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- 🔻 Bottom Wave Shape -->
+<div style="position: absolute; bottom: 0; left: 0; width: 100%; z-index: 1; line-height: 0; overflow: hidden;">
+  <svg viewBox="0 0 1440 320" preserveAspectRatio="none"
+       style="display: block; width: 100%; height: 100px; margin-bottom: -2px;">
+    <path fill="#ffffff" d="M0,192 C80,224 160,128 240,160 
+                             C320,192 400,288 480,256 
+                             C560,224 640,96 720,96 
+                             C800,96 880,224 960,256 
+                             C1040,288 1120,192 1200,160 
+                             C1280,128 1360,160 1440,192 
+                             L1440,320 L0,320 Z"/>
+  </svg>
+</div>
+
+
+
+</section>
+
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////
+                             START SECTION 3 - THE CAMPANIES SECTION  
+////////////////////////////////////////////////////////////////////////////////////////////////////-->
+ <!-- Bootstrap CSS (add in your <head>) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<!-- About Section -->
+<section id="about" class="py-5">
+
+  
+  <div class="container">
+    <!-- Heading -->
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold">About As</h1>
+        <div class="heading-line mb-1"></div>
+      </div>
+
+    <!-- Content Row -->
+    <div class="row align-items-center">
+
+      <!-- Left Side: Experience Info -->
+      <div class="col-md-6 mb-4">
+        <div class="d-flex align-items-start">
+          <!-- +3 + Line + Years -->
+          <div class="text-center me-3">
+            <h1 style="font-size: 100px; font-weight: bold; line-height: 1;">+3</h1>
+            <hr style="width: 60px; margin: 8px auto; border-top: 3px solid #000;">
+            <p class="text-uppercase" style="letter-spacing: 8px; font-weight: bold;">Years</p>
+          </div>
+
+          <!-- Heading Text -->
+          <div class="text-start" style="margin-top: 10px;">
+            <h5 class="mb-1 fw-bold" style="margin-top: 21px;">of working experience as a</h5>
+            <h5 class="fw-bold">Web Designer & Developer</h5>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <p class="mt-3">
+          I am a dedicated Full-Stack Developer with expertise in React, PHP, HTML, CSS, and MySQL. I create
+          responsive and efficient web applications with clean code and strong backend integration.
+        </p>
+
+        <!-- Highlights -->
+        <ul class="list-unstyled mt-3">
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-primary me-2"></i> Affordable Prices
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-primary me-2"></i> High Quality Product
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-primary me-2"></i> On Time Project Delivery
+          </li>
+        </ul>
+
+        <!-- Button -->
+        <button type="button" class="btn rounded-pill pt-3 pb-3 text-white"
+          style="background: linear-gradient(to right, rgb(141 23 238), rgb(141 23 238)); padding: 12px 28px; border: none;">
+          Read More
+        </button>
+      </div>
+
+      <!-- Right Side: Single Image with Shadow -->
+      <div class="col-md-6 text-center">
+ <img src="images\testimonials\converted__1_-removebg-preview.png"
+     alt="Main Image"
+     class="img-fluid rounded shadow-lg"
+     style="max-height: 450px; object-fit: contain; background-color: transparent;box-shadow: 0 1rem 3rem rgb(0 0 0 / 0%) !important;width: 100%;" />
+
+
+      </div>
+  
+
+    </div>
+  </div>
+</section>
+
+<!-- about as////////////////////////////////
+ ////////////////////////////////////////////////////////////////
+ //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+ <!-- video////////////////////////////////
+ ////////////////////////////////////////////////////////////////
+ //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<section id="" class="py-5 text-center position-relative" style="background: linear-gradient(135deg, #fdfdfd, #fbfbfb); overflow: hidden;">
+  <div class="container position-relative">
+
+    <!-- Floating Dots & Triangles -->
+    <div style="position: absolute; top: 10%; left: 5%; width: 50px; height: 50px; background: radial-gradient(#dcdcdc 40%, transparent); border-radius: 50%; animation: float1 6s ease-in-out infinite;"></div>
+    <div style="position: absolute; bottom: 15%; right: 10%; width: 0; height: 0; border-left: 30px solid transparent; border-right: 30px solid transparent; border-bottom: 50px solid #d3d3d3; opacity: 0.6; animation: float2 7s ease-in-out infinite;"></div>
+
+    <!-- Heading -->
+    <div class="row text-center mb-5 position-relative" style="z-index: 2;">
+      <h1 class="display-4 fw-bold text-dark text-capitalize">🔥 Spotlight Feature</h1>
+      <div class="mx-auto mt-2 mb-4" style="width: 80px; height: 5px; background: linear-gradient(to right, #8d17ee, #ff6ec4); border-radius: 50px;"></div>
+      <p class="lead text-muted">Catch the latest buzz from our world – live and in motion.</p>
+    </div>
+
+    <!-- Video Card -->
+    <div class="row justify-content-center position-relative mb-5" style="z-index: 2;">
+      <div class="col-md-10 col-lg-8">
+        <div class="position-relative rounded-4 shadow-lg" style="border: 2px solid rgba(141,23,238,0.2); background: rgba(255,255,255,0.15); backdrop-filter: blur(12px); overflow: hidden; box-shadow: 0 0 25px rgba(141,23,238,0.3); animation: glowPulse 4s infinite ease-in-out;">
+
+          <!-- Glow Line Top -->
+          <div style="height: 6px; width: 100%; background: linear-gradient(to right, #8d17ee, #ff6ec4); position: absolute; top: 0; left: 0; z-index: 2;"></div>
+
+          <!-- Video Embed -->
+        <!-- Video Embed -->
+<!--  Video Setup -->
+<video id="myVideo" autoplay muted playsinline controls poster="images/portfolio/video-thumbnail.jpg" class="w-100 h-100">
+  <source src="images/testimonials/newone.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</section>
+<!-- ////////////////////////////////
+ ////////////////////////////////////////////////////////////////
+ //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////
+                         START SECTION 4 - THE SERVICES  
+///////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <section id="services" class="services">
+
+    <div class="floating-shapes">
+  <div class="circle-shape shape1"></div>
+  <div class="triangle-shape shape2"></div>
+  <div class="circle-shape shape3"></div>
+  <div class="triangle-shape shape4"></div>
+  <div class="circle-shape shape5"></div>
+ 
+</div>
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold">Our Services</h1>
+        <div class="heading-line mb-1"></div>
+      </div>
+      <!-- START THE DESCRIPTION CONTENT  -->
+      <div class="row pt-2 pb-2 mt-0 mb-3">
+        <div class="col-md-12">
+          <div
+            class="bg-white p-3 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+
+            <!-- Left Heading -->
+            <div class="flex-fill pe-md-4">
+              <h2 class="fw-bold text-capitalize mb-0">
+                Crafting digital solutions with design, code, and strategy
+              </h2>
+            </div>
+
+            <!-- Vertical Divider -->
+            <div class="d-none d-md-block" style="width: 2px; height: 60px; background-color: #dee2e6; margin: 0 20px;">
+            </div>
+
+            <!-- Right Heading -->
+            <div class="flex-fill ps-md-4">
+              <h4 class="fw-bold mb-1">What I Can Do For You</h4>
+              <p class="text-muted mb-0">
+                Providing high-quality web design and development services tailored to your business
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- START THE MARKETING CONTENT  -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <div class="icon d-block fas fa-paper-plane"></div>
+              <h3 class="display-3--title mt-1">Web Designing</h3>
+              <p class="lh-lg">
+                I design modern, responsive, and user-friendly websites that not only look great but also deliver smooth
+                user experiences. From layout to interaction, every detail is crafted to match your brand and engage
+                your audience
+              </p>
+              <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+                <span><i class="fas fa-arrow-right"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+            <div class="services__pic">
+              <img src="images/services/service-1.png" alt="marketing illustration" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <!-- START THE WEB DEVELOPMENT CONTENT  -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+            <div class="services__pic">
+              <img src="images/services/service-2.png" alt="web development illustration" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <div class="icon d-block fas fa-code"></div>
+              <h3 class="display-3--title mt-1">web development</h3>
+              <p class="lh-lg">
+                I build fast, secure, and scalable websites using modern technologies like React, PHP, and MySQL —
+                delivering custom web solutions that align with your business goals.
+              </p>
+              <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+                <span><i class="fas fa-arrow-right"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--  START THE CLOUD HOSTING CONTENT  -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <div class="icon d-block fas fa-tools"></div>
+              <h3 class="display-3--title mt-1">Web Maintenance</h3>
+              <p class="lh-lg">
+                I provide reliable web maintenance services to keep your website updated, secure, and running smoothly —
+                so you can focus on your business while I handle the tech
+              </p>
+              <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
+                <span><i class="fas fa-arrow-right"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+            <div class="services__pic">
+              <img src="images/services/service-3.png" alt="cloud hosting illustration" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 5 - THE TESTIMONIALS  
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+  <section id="testimonials" class="testimonials"
+  style="background: linear-gradient(to right, rgb(141 23 238), rgb(141 23 238)); position: relative; overflow: hidden; padding: 100px 0;">
+  
+  <!-- Floating Shapes -->
+  <div class="floating-shapes">
+    <div class="circle-shape shape1"></div>
+    <div class="triangle-shape shape2"></div>
+  </div>
+
+  <!-- Dot-Dot Background SVG -->
+  <svg width="100%" height="100%" style="position: absolute; top: 0; left: 0; z-index: 0;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+        <circle cx="2" cy="2" r="2" fill="rgba(255,255,255,0.2)" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#dots)" />
+  </svg>
+
+  <!-- Main Content -->
+  <div class="container position-relative" style="z-index: 1;">
+    <div class="row text-center text-white">
+      <h1 class="display-3 fw-bold" style="margin-top: 15px;">Testimonials</h1>
+      <div class="d-flex justify-content-center">
+        <hr style="width: 100px; height: 3px; background: white; opacity: 1; border: none;">
+      </div>
+      <p class="lead pt-1">what our clients are saying</p>
+    </div>
+
+    <!-- Carousel Content -->
+    <div class="row align-items-center">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Item 1 -->
+          <div class="carousel-item active">
+            <p class="lh-lg text-white">
+              <i class="fas fa-quote-left"></i>
+              <span>I had a vision for my website, and it was brought to life even better than I imagined. The layout, design elements, and responsiveness were all crafted with precision. The overall professionalism and attention to detail truly stood out, and the delivery was both timely and flawless</span>
+              <i class="fas fa-quote-right"></i>
+            </p>
+          </div>
+          <!-- Item 2 -->
+          <div class="carousel-item">
+            <p class="lh-lg text-white">
+              <i class="fas fa-quote-left"></i>
+              <span>An outstanding experience from start to finish. Every feature I requested was implemented thoughtfully, and the site functions smoothly across all devices. Communication was consistent and clear, making the entire process very collaborative and stress-free.</span>
+              <i class="fas fa-quote-right"></i>
+            </p>
+          </div>
+          <!-- Item 3 -->
+          <div class="carousel-item">
+            <p class="lh-lg text-white">
+              <i class="fas fa-quote-left"></i>
+              <span>I was looking for someone who could deliver a professional and user-friendly website — and that’s exactly what I got. The developer ensured every detail was taken care of, and the end result is a fast, mobile-optimized, and visually appealing website.</span>
+              <i class="fas fa-quote-right"></i>
+            </p>
+          </div>
+          <!-- Item 4 -->
+          <div class="carousel-item">
+            <p class="lh-lg text-white">
+              <i class="fas fa-quote-left"></i>
+              <span>Throughout the development process, every question I had was answered with clarity. The website not only matches my brand identity but also enhances my online presence. I’m extremely pleased with the outcome and would definitely recommend this service..</span>
+              <i class="fas fa-quote-right"></i>
+            </p>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="text-center" style="margin-bottom: 14px;">
+          <button class="btn btn-outline-light" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <i class="fas fa-long-arrow-alt-left"></i>
+          </button>
+          <button class="btn btn-outline-light" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 5 - THE TESTIMONIALS  
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<section id="portfolio" class="py-5 text-center bg-light position-relative" style="background-color: rgb(255 255 255) !important;">
+  <div class="container">
+    <div class="floating-shapes">
+      <div class="circle-shape shape1"></div>
+      <div class="triangle-shape shape2"></div>
+      <div class="circle-shape shape3"></div>
+      <div class="triangle-shape shape4"></div>
+      <div class="circle-shape shape5"></div>
+    </div>
+
+    <!-- Heading -->
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold text-capitalize">Latest Work</h1>
+      <div class="heading-line"></div>
+    </div>
+
+    <!-- Carousel -->
+<!-- Carousel -->
+<div id="portfolioCarousel" class="carousel slide position-relative" data-bs-ride="carousel"
+  style="max-width: 80%; margin: 0 auto; z-index: 2; position: relative; max-height: 500px; overflow: hidden;">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center">
+        <div class="portfolio-box position-relative" style="max-width: 90%; height: 100%;">
+          <img src="images/portfolio/project.png" class="img-fluid rounded w-100" style="height: 100%; object-fit: cover;" alt="project image">
+          <div class="portfolio-info">
+            <h5 class="mb-1">Welcome to Theatre Cell, JNVU – Explore the World of Dramatic Arts</h5>
+    <p class="mb-0">This website is developed for the official Theatre Cell of Jai Narain Vyas University (JNVU), Jodhpur to digitally showcase their theatrical activities, events, team, and contact information.
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+        <div class="portfolio-box position-relative" style="max-width: 90%; height: 100%;">
+          <img src="images/portfolio/project2.png" class="img-fluid rounded w-100" style="height: 100%; object-fit: cover;" alt="project image">
+          <div class="portfolio-info">
+            <h5>Smart Restaurant Table Booking Web Application</h5>
+            <p>This project is an online restaurant table booking system that allows customers to reserve tables at their preferred time, date, and seating capacity directly through a responsive website. The goal is to simplify the table reservation process and reduce wait times for customers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+        <div class="portfolio-box position-relative" style="max-width: 90%; height: 100%;">
+          <img src="images/portfolio/project3.png" class="img-fluid rounded w-100" style="height: 100%; object-fit: cover;" alt="project image">
+          <div class="portfolio-info">
+            <h5>Dynamic Dashboard Web Application with User & Admin Roles</h5>
+            <p>This project is a role-based web dashboard that supports user authentication, form submissions, chat features, and an admin panel. Users can sign up, log in, access their dashboard, and interact via forms and chat. Admins have special access to manage users, view form data, and control the backend.
+
+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+        <div class="portfolio-box position-relative" style="max-width: 90%; height: 100%;">
+          <img src="images/portfolio/project4.png" class="img-fluid rounded w-100" style="height: 100%; object-fit: cover;" alt="project image">
+          <div class="portfolio-info">
+            <h5>Build Your Brand Online with Our Expert Web & Graphic Solutions</h5>
+            <p>This project is a web portal developed for a creative web agency that provides services like website designing, development, and graphic/poster designing. Users can browse services and submit their requirements directly through an interactive form. The site is responsive, professional, and designed to generate leads and client inquiries.
+
+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+  <!-- Indicators -->
+  <div class="carousel-indicators mt-4">
+    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+</div>
+
+
+    <!-- Read More Button -->
+    <div class="text-center mt-5">
+      <a href="#!" class="btn btn-dark px-5 py-3 rounded-pill fs-5"
+         style="background: linear-gradient(to right, rgb(141, 23, 238), rgb(141, 23, 238)); padding: 12px 28px; border: none;">
+        Read More
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer" style="background-color: #000;">
+  <div class="container py-5">
+    <div class="row d-flex justify-content-between text-white">
+      <!-- Left Side: Contact Info Vertical -->
+      <div class="col-lg-4 d-flex flex-column justify-content-start">
+        <!-- Phone -->
+        <div class="d-flex mb-4">
+          <div class="me-3">
+            <!-- Phone Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-phone-call">
+              <path d="M15 7a2 2 0 0 1 2 2" />
+              <path d="M15 3a6 6 0 0 1 6 6" />
+              <path
+                d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5l1.5-2.5 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-1z" />
+            </svg>
+          </div>
+          <div>
+            <a href="https://api.whatsapp.com/send?phone=917850963027" class="text-white fw-bold d-block">+91 7850963027</a>
+            <small>Monday - Friday</small>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="d-flex mb-4">
+          <div class="me-3">
+            <!-- Email Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-mail">
+              <path d="M4 4h16v16H4z" stroke="none" />
+              <polyline points="3 9 12 15 21 9 12 3 3 9" />
+              <path d="M21 9v10a2 2 0 0 1 -2 2H5a2 2 0 0 1 -2-2V9" />
+            </svg>
+          </div>
+          <div>
+            <a href="#" class="text-white fw-bold d-block">vasugoyal536@gmail.com</a>
+            <small>Online support</small>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="d-flex">
+          <div class="me-3">
+            <!-- Location Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-map-pin">
+              <path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <div>
+            <a href="#" class="text-white fw-bold d-block">Jodhpur, Rajasthan</a>
+            <small>342002</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: IO.FREELANCER Info -->
+      <div class="col-lg-7 text-center text-lg-start">
+        <h5 class="text-uppercase fw-bold">IO . FREELANCER</h5>
+        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+        <p class="lh-lg">
+          As a Full-Stack Developer, I design user-friendly interfaces, develop secure backends, and deliver complete,
+          responsive websites using technologies like React, PHP, MySQL, HTML, and CSS. From concept to deployment and
+          ongoing maintenance, I build fast, scalable, and fully-managed web solutions tailored to your business
+          needs.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Media -->
+  <div class="footer-sm" style="background-color: #212121;">
+    <div class="container">
+      <div class="row py-4 text-center text-white align-items-center">
+        <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+          connect with us on social media
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <a href="https://api.whatsapp.com/send?phone=917850963027" target="_blank" class="text-white mx-2">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://github.com/vasugoyal004" target="_blank" class="text-white mx-2">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.upwork.com/freelancers/~016d6f513e1776218e?mp_source=share/" 
+   target="_blank" 
+   class="text-white mx-2">
+   <i class="fab fa-upwork"></i>
+</a>
+          <a href="https://www.instagram.com/io.freelancer/" target="_blank" class="text-white mx-2">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- WHATSAPP BUTTON -->
+  <a id="whatsappBtn" href="https://wa.me/918750963027" target="_blank"
+    class="shadow btn-primary rounded-circle back-to-top"
+    style="position: fixed; bottom: 80px; right: 20px; z-index: 999; background-color: green;">
+    <i class="bi bi-whatsapp me-0 fs-4"></i>
+  </a>
+
+  <!-- JAVASCRIPT FOR JUMP ANIMATION -->
+
+<!--  JS Logic -->
+<script>
+  const video = document.getElementById('myVideo');
+
+  // 🔁 Looping when video ends
+  video.addEventListener('ended', function () {
+    video.currentTime = 0;
+    video.play();
+  });
+
+  // 🔊 Sound enable on first user click
+  // window.addEventListener('click', function () {
+    // video.muted = false;
+    // video.volume = 1.0;
+    // video.play();
+  // }, { once: true });
+</script>
+
+  <script>
+    const btn = document.getElementById("whatsappBtn");
+    let up = true;
+
+    setInterval(() => {
+      if (up) {
+        btn.style.transform = "translateY(-10px)";
+      } else {
+        btn.style.transform = "translateY(0px)";
+      }
+      up = !up;
+    }, 300); 
+  </script>
+
+
+</body>
+
+</html>
